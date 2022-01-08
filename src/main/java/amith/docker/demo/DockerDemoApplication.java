@@ -15,7 +15,7 @@ public class DockerDemoApplication {
 	@GetMapping(path="/message")
 	public @ResponseBody String display()
 	{
-		return "Hello World I am a docker ";
+		return "Hello World I am a docker with Jenkins ";
 	}
 
 	public static void main(String[] args) {
