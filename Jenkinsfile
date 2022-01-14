@@ -28,6 +28,16 @@ pipeline {
             }
         }
         
+        stage('Install') {
+            steps {
+              
+               // bat 'mvn -Dmaven.test.failure.ignore=true clean' 
+                bat 'mvn install' 
+                echo 'installing Project....'
+                echo 'installed Successfully'
+            }
+        }
+        
 //           stage('Packaging') {
 //             steps {
 //                 bat 'mvn package'
